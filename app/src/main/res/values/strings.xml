@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">EpoxyExample</string>
+
+    <string name="block_yes">Blocking</string>
+    <string name="block_no">Non Blocking</string>
+
+    <string name="favorite_yes">Favorite</string>
+    <string name="favorite_no">Non Favorite???</string>
+
+    <string name="name_header">Name</string>
+    <string name="phonetic_name_header">Phonetic Name</string>
+    <string name="gender_header">Gender</string>
+    <string name="address_header">Address</string>
+    <string name="more_header">More</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="phonetic_first_name_hint">Phonetic First Name</string>
+    <string name="phonetic_last_name_hint">Phonetic Last Name</string>
+    <string name="address_hint">Address</string>
+    <string name="block_switch_label">Block</string>
+    <string name="favorite_switch_label">Favorite</string>
+    <string name="notes_hint">Notes</string>
+
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_unknown">Unknown</string>
+    <string name="gender_unanswered">Unanswered</string>
+</resources>

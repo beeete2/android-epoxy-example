@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation_graph" app:startDestination="@id/friendListFragment">
+
+    <fragment android:id="@+id/friendListFragment"
+              android:name="com.beeete2.android.epoxyexample.ui.friend.list.FriendListFragment"
+              android:label="FriendListFragment">
+        <action
+            android:id="@+id/action_taskListFragment_to_friendInputFragment"
+            app:destination="@id/friendInputFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendInputFragment"
+        android:name="com.beeete2.android.epoxyexample.ui.friend.input.FriendInputFragment"
+        android:label="FriendInputFragment" >
+        <action
+            android:id="@+id/action_friendInputFragment_to_friendResultFragment"
+            app:destination="@id/friendResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendResultFragment"
+        android:name="com.beeete2.android.epoxyexample.ui.friend.result.FriendResultFragment"
+        android:label="FriendResultFragment" />
+</navigation>
