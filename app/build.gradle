@@ -37,7 +37,7 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:2.1.0-alpha02"
     implementation "com.google.android.material:material:1.0.0"
 
-    def epoxy_version = "3.4.1"
+    def epoxy_version = "3.5.1"
     implementation "com.airbnb.android:epoxy:$epoxy_version"
     kapt "com.airbnb.android:epoxy-processor:$epoxy_version"
 

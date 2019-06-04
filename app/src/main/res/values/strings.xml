@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">EpoxyExample</string>
 
+    <string name="menu_friend">Friend</string>
+    <string name="menu_switcher">Switch</string>
+
     <string name="block_yes">Blocking</string>
     <string name="block_no">Non Blocking</string>
 

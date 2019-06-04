@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/navigation_graph" app:startDestination="@id/friendListFragment">
-
+            android:id="@+id/navigation_graph" app:startDestination="@id/menuFragment">
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.beeete2.android.epoxyexample.ui.menu.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_friendListFragment"
+            app:destination="@id/friendListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_switcherFragment"
+            app:destination="@id/switcherFragment" />
+    </fragment>
     <fragment android:id="@+id/friendListFragment"
               android:name="com.beeete2.android.epoxyexample.ui.friend.list.FriendListFragment"
               android:label="FriendListFragment">
@@ -22,4 +32,8 @@
         android:id="@+id/friendResultFragment"
         android:name="com.beeete2.android.epoxyexample.ui.friend.result.FriendResultFragment"
         android:label="FriendResultFragment" />
+    <fragment
+        android:id="@+id/switcherFragment"
+        android:name="com.beeete2.android.epoxyexample.ui.switcher.SwitcherFragment"
+        android:label="SwitcherFragment" />
 </navigation>

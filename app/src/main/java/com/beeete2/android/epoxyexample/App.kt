@@ -7,6 +7,7 @@ import com.beeete2.android.epoxyexample.ui.friend.input.FriendHolder
 import com.beeete2.android.epoxyexample.ui.friend.input.FriendInputViewModel
 import com.beeete2.android.epoxyexample.ui.friend.list.FriendListViewModel
 import com.beeete2.android.epoxyexample.ui.friend.result.FriendResultViewModel
+import com.beeete2.android.epoxyexample.ui.switcher.SwitcherViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.context.startKoin
@@ -38,6 +39,7 @@ class App : Application() {
         viewModel { FriendListViewModel(get()) }
         viewModel { FriendInputViewModel(get()) }
         viewModel { FriendResultViewModel(get()) }
+        viewModel { SwitcherViewModel() }
     }
 
 }
