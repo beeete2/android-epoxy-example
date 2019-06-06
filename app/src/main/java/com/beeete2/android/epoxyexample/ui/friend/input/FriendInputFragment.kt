@@ -145,9 +145,7 @@ class FriendInputFragment : Fragment() {
                 label(R.string.block_switch_label)
                 checked(data?.block ?: false)
                 checkedChangeListener { _, _, _, isChecked, _ ->
-                    data?.let {
-                        if (it.block != isChecked) vm.setBlock(isChecked)
-                    }
+                    vm.setBlock(isChecked)
                 }
             }
             addSwitchItem {
@@ -155,9 +153,7 @@ class FriendInputFragment : Fragment() {
                 label(R.string.favorite_switch_label)
                 checked(data?.favorite ?: false)
                 checkedChangeListener { _, _, _, isChecked, _ ->
-                    data?.let {
-                        if (it.favorite != isChecked) vm.setFavorite(isChecked)
-                    }
+                    vm.setFavorite(isChecked)
                 }
             }
             addInputItemView {

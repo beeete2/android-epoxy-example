@@ -58,8 +58,7 @@ class SwitcherFragment : Fragment() {
                 label(R.string.block_switch_label)
                 checked(data.block)
                 checkedChangeListener { _, isChecked ->
-                    if (currentData?.block != isChecked)
-                        vm.setBlock(isChecked)
+                    vm.setBlock(isChecked)
                 }
             }
             addSwitchValueItem {
@@ -67,8 +66,7 @@ class SwitcherFragment : Fragment() {
                 label(R.string.favorite_switch_label)
                 checked(SwitchValue(data.favorite))
                 checkedChangeListener { _, isChecked ->
-                    if (currentData?.favorite != isChecked)
-                        vm.setFavorite(isChecked)
+                    vm.setFavorite(isChecked)
                 }
             }
         }
